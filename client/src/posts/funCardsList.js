@@ -9,7 +9,7 @@ export default function CardsList() {
   const [funs, setFuns] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3001/")
+    fetch("https://fblaserver.herokuapp.com/")
       .then(res => res.json())
       .then((data) =>
         setFuns(data));

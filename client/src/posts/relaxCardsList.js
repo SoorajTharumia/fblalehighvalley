@@ -8,7 +8,7 @@ export default function CardsList() {
   const [relaxes, setRelaxes] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3001/")
+    fetch("https://fblaserver.herokuapp.com/")
       .then(res => res.json())
       .then((data) =>
         setRelaxes(data));

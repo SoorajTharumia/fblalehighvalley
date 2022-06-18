@@ -12,7 +12,7 @@ app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 
 // DATABASE
-mongoose.connect(process.env.MONGO_URI || 'http://localhost:3001/', {
+mongoose.connect(process.env.MONGO_URI || 'https://fblaserver.herokuapp.com/', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }, function (err) {
