@@ -1,0 +1,50 @@
+.directionsBtn {
+    color: white !important;
+    text-decoration: none;
+}
+
+.card {
+    background-color: transparent !important;
+
+}
+
+.cardBorder {
+    border: 1px solid black !important;
+    padding: 10px !important;
+    border-width: 2px !important;
+    margin: 0 2.5% 2.5% 2.5%;
+    vertical-align: top;
+}
+
+.cardContent {
+    display: inline-block;
+    width: 100%;
+    min-height: 200px;
+    height: auto;
+    text-align: center;
+}
+
+.title {
+    font-size: 30px !important;
+}
+
+a {
+    text-decoration: underline;
+    color: black !important;
+}
+
+a:hover {
+    color: #2b1bbf !important;
+}
+
+
+h2 {
+    font-size: 25px !important;
+}
+
+.vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

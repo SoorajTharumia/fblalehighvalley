@@ -1,0 +1,9 @@
+.form-control {
+    background-color: #E3F5A2 !important;
+    border: #E3F5A2 !important;
+}
+
+input {
+    border-radius: 5px !important;
+    border: 0.5px solid !important;
+}

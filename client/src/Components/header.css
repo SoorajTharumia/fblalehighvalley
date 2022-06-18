@@ -1,0 +1,17 @@
+h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.description {
+    display: inline-block;
+    margin: auto;
+    line-height: 1.75;
+}
