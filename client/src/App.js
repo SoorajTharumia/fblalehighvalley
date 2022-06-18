@@ -73,7 +73,7 @@ const App = () => {
           <Header />
           <SearchBar onSearch={processAttribute} />
         </div>
-        <div className='pictures col-xl-6 col-lg 6 vertical-center'>
+        <div className='images col-xl-6 col-lg 6'>
           <Images /> 
         </div>
       </div>

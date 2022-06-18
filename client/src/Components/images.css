@@ -1,22 +1,17 @@
-.imgcontainer {
-    margin: auto;
-    color: black;
-    text-align: center;
-    height: auto;
-    width: auto;
-}
-
-img {
-    display: inline-block;
-    margin: 25px 10px;
-    height: auto;
-    width: 250px;
-    border-radius: 10px;
-}
-
-.vertical {
+.images {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: auto auto auto auto !important;
+    text-align: center;
+    padding: 4%;
+}
+
+/* center the images */
+.images img {
+    margin: auto;
+    border-radius: 10px;
+    max-width: 650px;
+    max-height: 650px;
 }
