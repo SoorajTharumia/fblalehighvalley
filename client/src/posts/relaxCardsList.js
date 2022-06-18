@@ -23,7 +23,7 @@ export default function CardsList() {
             <Card.Title>
               <h1 className='title'><a href={relax.website}>{relax.name}</a></h1>
               <p>Address: {relax.address}</p>
-              <p>Playing Shows: {relax.top_movies}</p>
+              <p>Screen Sizes: {relax.screen_sizes}</p>
             </Card.Title>
             <Button className="btn btn-block btn-success">
               <a className='directionsBtn' href={link}>Get Directions</a>
