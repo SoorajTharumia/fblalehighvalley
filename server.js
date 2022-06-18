@@ -37,12 +37,6 @@ const attractionSchema = new mongoose.Schema({
 
 const Attractions = mongoose.model('Attractions', attractionSchema);
 
-app.get("/", (req, res) => {
-    Attractions.find({}).then(
-        items => res.json(items)
-    ).catch(err => console.log(err));
-});
-
 // Deploy production server to Heroku
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static('client/build'));
@@ -51,6 +45,13 @@ if (process.env.NODE_ENV === 'production') {
         res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
     });
 }
+
+app.get("/", (req, res) => {
+    Attractions.find({}).then(
+        items => res.json(items)
+    ).catch(err => console.log(err));
+});
+
 
 const port = process.env.PORT || 3001;
 
