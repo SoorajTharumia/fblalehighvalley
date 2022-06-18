@@ -34,24 +34,7 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-img {
-  display: inline-block;
-  margin: 25px 10px;
-  height: auto;
-  width: 250px;
-  border-radius: 10px;
-}
 
-.imgpicture1 {
-  position: relative;
-  bottom: 108px;
-}
-
-.imgpicture2 {
-  position: relative;
-  bottom: 232px;
-  height: 20px;
-}
 
 .row {
   display: inline-block;
@@ -84,13 +67,7 @@ img {
   background-color: #93F9C8;
 }
 
-.imgcontainer {
-  margin: auto;
-  color: black;
-  text-align: center;
-  height: auto;
-  width: auto;
-}
+
 
 table {
   height: auto;

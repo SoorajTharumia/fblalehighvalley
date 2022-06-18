@@ -1,24 +1,12 @@
 import React from 'react'
+import './images.css'
 
 const Images = () => {
   return (
-    <div className='row'>
+    <div className='row vertical'>
       <table>
         <tbody>
           <tr>
-            <td>
-              <div className='imgpicture'>
-                <img src="https://i.imgur.com/zuzHa5h.jpeg" alt='PA Flag'></img>
-                <h4 className="imgcontainer">Flag of Pennsylvania</h4>
-                <h4 className="imgcontainer">(Courtesy of Britannica)</h4>
-
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <h1> </h1>
-            </td>
             <td>
               <div className='imgpicture1'>
                   <img src="https://i.imgur.com/ksN9Ffe.jpg" alt='Downtown Allentown'></img>
