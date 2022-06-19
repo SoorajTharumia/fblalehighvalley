@@ -21,11 +21,11 @@ const SearchBar = ({onSearch}) => {
         <Form className='add-form' onSubmit = {onSubmit}>
             <div className='form-control'>
             <label>
-                Search from one of the given attributes: Eats, Explore, Shop, Watch, Nature, Sport
+                Search from one of the given attributes: Food, Explore, Shop, Watch, Nature, Sport
             </label>
             <input
                 type='text'
-                placeholder='Eats, Explore, Shop, Watch, Nature, Sport'
+                placeholder='Food, Explore, Shop, Watch, Nature, Sport'
                 value = {text}
                 onChange = {(e) => {
                     setText(e.target.value)

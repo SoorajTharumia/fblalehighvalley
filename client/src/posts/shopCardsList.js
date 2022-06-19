@@ -18,18 +18,26 @@ export default function CardsList() {
     return shops.map(shop => {
       if (shop.category === "shops") {
         { var link = "http://maps.google.com/?q=" + shop.address; }
-        return <Card style={{ width: "22rem" }} className="cardBorder cardContent">
-          <Card.Body className='vertical'>
-            <Card.Title>
-              <h1 className='title'><a href={shop.website}>{shop.name}</a></h1>
-              <p>Address: {shop.address}</p>
-              <p>Phone Number: {shop.phone_number}</p>
-            </Card.Title>
-            <Button className="btn btn-block btn-success">
-              <a className='directionsBtn' href={link}>Get Directions</a>
-            </Button>
-          </Card.Body>
-        </Card>
+        return (
+          <Card style={{ width: "22rem" }} className="cardBorder cardContent">
+            <Card.Body className="vertical">
+              <Card.Title>
+                <h1 className="title">
+                  <a href={shop.website} target="_blank">
+                    {shop.name}
+                  </a>
+                </h1>
+                <p>Address: {shop.address}</p>
+                <p>Phone Number: {shop.phone_number}</p>
+              </Card.Title>
+              <Button className="btn btn-block btn-success">
+                <a className="directionsBtn" href={link} target="_blank">
+                  Get Directions
+                </a>
+              </Button>
+            </Card.Body>
+          </Card>
+        );
       }
     })}
 }

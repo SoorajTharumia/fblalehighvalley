@@ -19,18 +19,26 @@ export default function CardsList() {
       if (nature.category === "natures") {
       
         { var link = "http://maps.google.com/?q=" + nature.address; }
-        return <Card style={{ width: "22rem" }} className="cardBorder cardContent">
-          <Card.Body className='vertical'>
-            <Card.Title>
-              <h1 className='title'><a href={nature.website}>{nature.name}</a></h1>
-              <p>Address: {nature.address}</p>
-              <p>Things To Do: {nature.things_to_do}</p>
-            </Card.Title>
-            <Button className="btn btn-block btn-success">
-              <a className='directionsBtn' href={link}>Get Directions</a>
-            </Button>
-          </Card.Body>
-        </Card>
+        return (
+          <Card style={{ width: "22rem" }} className="cardBorder cardContent">
+            <Card.Body className="vertical">
+              <Card.Title>
+                <h1 className="title">
+                  <a href={nature.website} target="_blank">
+                    {nature.name}
+                  </a>
+                </h1>
+                <p>Address: {nature.address}</p>
+                <p>Things To Do: {nature.things_to_do}</p>
+              </Card.Title>
+              <Button className="btn btn-block btn-success">
+                <a className="directionsBtn" href={link} target="_blank">
+                  Get Directions
+                </a>
+              </Button>
+            </Card.Body>
+          </Card>
+        );
       }
     })}
 }

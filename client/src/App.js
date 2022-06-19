@@ -29,7 +29,7 @@ const App = () => {
       setShowNatures(false)
       setShowSports(false)
       setShowWelcome(false)
-    if (data === "eats") {
+    if (data === "food") {
       setShowFood(true)
       setShowWelcome(false)
 

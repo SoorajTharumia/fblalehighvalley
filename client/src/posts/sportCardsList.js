@@ -18,19 +18,27 @@ export default function CardsList() {
     return sports.map(sport => {
       if (sport.category === "sports") {
         { var link = "http://maps.google.com/?q=" + sport.address; }
-        return <Card style={{ width: "22rem" }} className="cardBorder cardContent">
-          <Card.Body className='vertical'>
-            <Card.Title>
-              <h1 className='title'><a href={sport.website}>{sport.name}</a></h1>
-              <p>Address: {sport.address}</p>
-              <p>Team: {sport.team}</p>
-              <p>Sport: {sport.sport}</p>
-            </Card.Title>
-            <Button className="btn btn-block btn-success">
-              <a className='directionsBtn' href={link}>Get Directions</a>
-            </Button>
-          </Card.Body>
-        </Card>
+        return (
+          <Card style={{ width: "22rem" }} className="cardBorder cardContent">
+            <Card.Body className="vertical">
+              <Card.Title>
+                <h1 className="title">
+                  <a href={sport.website} target="_blank">
+                    {sport.name}
+                  </a>
+                </h1>
+                <p>Address: {sport.address}</p>
+                <p>Team: {sport.team}</p>
+                <p>Sport: {sport.sport}</p>
+              </Card.Title>
+              <Button className="btn btn-block btn-success">
+                <a className="directionsBtn" href={link} target="_blank">
+                  Get Directions
+                </a>
+              </Button>
+            </Card.Body>
+          </Card>
+        );
       }
     })}
 }

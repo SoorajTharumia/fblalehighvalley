@@ -18,18 +18,26 @@ export default function CardsList() {
     return relaxes.map(relax => {
       if (relax.category === "relaxes") {
         { var link = "http://maps.google.com/?q=" + relax.address; }
-        return <Card style={{ width: "22rem" }} className="cardBorder cardContent">
-          <Card.Body className='vertical'>
-            <Card.Title>
-              <h1 className='title'><a href={relax.website}>{relax.name}</a></h1>
-              <p>Address: {relax.address}</p>
-              <p>Screen Sizes: {relax.screen_sizes}</p>
-            </Card.Title>
-            <Button className="btn btn-block btn-success">
-              <a className='directionsBtn' href={link}>Get Directions</a>
-            </Button>
-          </Card.Body>
-        </Card>
+        return (
+          <Card style={{ width: "22rem" }} className="cardBorder cardContent">
+            <Card.Body className="vertical">
+              <Card.Title>
+                <h1 className="title">
+                  <a href={relax.website} target="_blank">
+                    {relax.name}
+                  </a>
+                </h1>
+                <p>Address: {relax.address}</p>
+                <p>Screen Sizes: {relax.screen_sizes}</p>
+              </Card.Title>
+              <Button className="btn btn-block btn-success">
+                <a className="directionsBtn" href={link} target="_blank">
+                  Get Directions
+                </a>
+              </Button>
+            </Card.Body>
+          </Card>
+        );
       }
     })}
 }
