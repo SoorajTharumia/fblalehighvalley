@@ -67,33 +67,34 @@ const App = () => {
   }
 
   return (
-    <><>
-      <div className='container-fluid row mx-auto'>
-        <div className='col-xl-6 col-lg-6 vertical'>
-          <Header />
-          <SearchBar onSearch={processAttribute} />
+    <>
+      <>
+        <div className="container-fluid row mx-auto">
+          <div className="col-xl-6 col-lg-6 vertical">
+            <Header />
+            <SearchBar onSearch={processAttribute} />
+          </div>
+          <div className="images col-xl-6 col-lg 6">
+            <Images />
+          </div>
         </div>
-        <div className='images col-xl-6 col-lg 6'>
-          <Images /> 
-        </div>
-      </div>
-      <div className='attractionBackground row mx-auto'>
-        
-        {showWelcome ? <Welcome /> : null}
-        
+        <div className="attractionBackground row mx-auto">
+          {showWelcome ? <Welcome /> : null}
+
           {showFood ? <FoodsCardsList /> : null}
-        
-        {showFuns ? <FunCardsList /> : null}
-        {showNatures ? <NatureCardsList /> : null}
-        {showRelaxes ? <RelaxCardsList /> : null}
-        {showShops ? <ShopCardsList /> : null}
-        {showSports ? <SportCardsList /> : null}
-         
+
+          {showFuns ? <FunCardsList /> : null}
+          {showNatures ? <NatureCardsList /> : null}
+          {showRelaxes ? <RelaxCardsList /> : null}
+          {showShops ? <ShopCardsList /> : null}
+          {showSports ? <SportCardsList /> : null}
+        </div>
+      </>
+      <div className="container2">
+        FBLA Coding &#38; Programming 2021-2022, Sooraj Tharumia
       </div>
-      </><div className='container2'>
-          FBLA Coding &#38; Programming 2021-2022, Sooraj Tharumia
-        </div></>
-    );
+    </>
+  );
   }
 
 export default App;
