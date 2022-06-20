@@ -13,7 +13,11 @@ export default function CardsList() {
       .then(res => res.json())
       .then((data) =>
         setFuns(data));
-  }, [funs]);
+  }, []);
+
+  useEffect(() => {
+    console.log(funs);
+  });
 
   {
     return funs.map(fun => {
@@ -24,7 +28,7 @@ export default function CardsList() {
             <Card.Body className="vertical">
               <Card.Title>
                 <h1 className="title">
-                  <a href={fun.website} target="_blank">
+                  <a href={fun.website} target="_blank" rel="noreferrer">
                     {fun.name}
                   </a>
                 </h1>
@@ -33,7 +37,12 @@ export default function CardsList() {
                 <p>Phone Number: {fun.phone_number}</p>
               </Card.Title>
               <Button className="btn btn-block btn-success">
-                <a className="directionsBtn" href={link} target="_blank">
+                <a
+                  className="directionsBtn"
+                  href={link}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Get Directions
                 </a>
               </Button>

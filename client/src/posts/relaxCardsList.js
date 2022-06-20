@@ -12,7 +12,11 @@ export default function CardsList() {
       .then(res => res.json())
       .then((data) =>
         setRelaxes(data));
-  }, [relaxes]);
+  }, []);
+
+  useEffect(() => {
+    console.log(relaxes);
+  });
 
   {
     return relaxes.map(relax => {
@@ -23,7 +27,7 @@ export default function CardsList() {
             <Card.Body className="vertical">
               <Card.Title>
                 <h1 className="title">
-                  <a href={relax.website} target="_blank">
+                  <a href={relax.website} target="_blank" rel="noreferrer">
                     {relax.name}
                   </a>
                 </h1>
@@ -31,7 +35,12 @@ export default function CardsList() {
                 <p>Screen Sizes: {relax.screen_sizes}</p>
               </Card.Title>
               <Button className="btn btn-block btn-success">
-                <a className="directionsBtn" href={link} target="_blank">
+                <a
+                  className="directionsBtn"
+                  href={link}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Get Directions
                 </a>
               </Button>

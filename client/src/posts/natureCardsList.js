@@ -12,7 +12,11 @@ export default function CardsList() {
       .then(res => res.json())
       .then((data) =>
         setNatures(data));
-  }, [natures]);
+  }, []);
+
+  useEffect(() => {
+    console.log(natures);
+  });
 
   {
     return natures.map(nature => {
@@ -24,7 +28,7 @@ export default function CardsList() {
             <Card.Body className="vertical">
               <Card.Title>
                 <h1 className="title">
-                  <a href={nature.website} target="_blank">
+                  <a href={nature.website} target="_blank" rel="noreferrer">
                     {nature.name}
                   </a>
                 </h1>
@@ -32,7 +36,12 @@ export default function CardsList() {
                 <p>Things To Do: {nature.things_to_do}</p>
               </Card.Title>
               <Button className="btn btn-block btn-success">
-                <a className="directionsBtn" href={link} target="_blank">
+                <a
+                  className="directionsBtn"
+                  href={link}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Get Directions
                 </a>
               </Button>

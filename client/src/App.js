@@ -9,6 +9,7 @@ import FoodsCardsList from './posts/foodsCardsList';
 import FunCardsList from './posts/funCardsList';
 import Images from './Components/images';
 import Welcome from './Components/welcome';
+import TopBar from "./Components/topBar"; 
 import './App.css';
 
 const App = () => {
@@ -63,12 +64,12 @@ const App = () => {
       setShowWelcome(true)
       alert("Please provide a valid attribute.")
     }
-    
   }
 
   return (
     <>
       <>
+        <TopBar />
         <div className="container-fluid row mx-auto">
           <div className="col-xl-6 col-lg-6 vertical">
             <Header />
@@ -80,9 +81,7 @@ const App = () => {
         </div>
         <div className="attractionBackground row mx-auto">
           {showWelcome ? <Welcome /> : null}
-
           {showFood ? <FoodsCardsList /> : null}
-
           {showFuns ? <FunCardsList /> : null}
           {showNatures ? <NatureCardsList /> : null}
           {showRelaxes ? <RelaxCardsList /> : null}
