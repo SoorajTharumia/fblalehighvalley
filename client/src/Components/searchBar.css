@@ -11,3 +11,7 @@ input {
 .btn-success {
     margin-bottom: 25px;
 }
+
+strong {
+    color:#24498a;
+}

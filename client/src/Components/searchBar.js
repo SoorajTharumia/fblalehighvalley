@@ -18,27 +18,27 @@ const SearchBar = ({onSearch}) => {
     }
 
     return (
-        <Form className='add-form' onSubmit = {onSubmit}>
-            <div className='form-control'>
-            <label>
-                Search from one of the given attributes: Food, Explore, Shop, Watch, Nature, Sport
-            </label>
-            <input
-                type='text'
-                placeholder='Food, Explore, Shop, Watch, Nature, Sport'
-                value = {text}
-                onChange = {(e) => {
-                    setText(e.target.value)
-                }}
-            />
-            </div>
+      <Form className="add-form" onSubmit={onSubmit}>
+        <div className="form-control">
+          <label>
+            Search from one of the given attributes:{" "}
+            <strong>Food, Explore, Shop, Watch, Nature, Sport</strong>
+          </label>
+          <input
+            type="text"
+            placeholder="Food, Explore, Shop, Watch, Nature, Sport"
+            value={text}
+            onChange={(e) => {
+              setText(e.target.value);
+            }}
+          />
+        </div>
 
-            <Button type="submit" className='btn btn-block btn-success'>
-                Search
-            </Button>
-        </Form>
-
-    )
+        <Button type="submit" className="btn btn-block btn-success">
+          Search
+        </Button>
+      </Form>
+    );
 };
 
 export default SearchBar;
