@@ -51,6 +51,7 @@ body {
   overflow: auto;
   padding: 20px;
   background-color: #93F9C8;
+  height: 66px !important;
 }
 
 .btn-block {

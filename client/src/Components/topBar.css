@@ -1,3 +1,12 @@
 .navigation {
     background-color: #93F9C8;
 }
+
+.dropstart .dropdown-toggle::before{
+    display: none !important;
+}    
+
+.brand {
+    font-family: "Futura", sans-serif;
+    font-weight: 200;
+}
