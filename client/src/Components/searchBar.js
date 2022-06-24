@@ -21,24 +21,26 @@ const SearchBar = ({onSearch}) => {
     return (
       <Form className="add-form" onSubmit={onSubmit}>
         <div className="form-control">
-          <label style={{ color: '#edf2f4'}}>
+          <label style={{ color: "#2b2d42" }}>
             Search from one of the given attributes:{" "}
-            <strong class='attributes'>Food, Explore, Shop, Watch, Nature, Sport</strong>
+            <strong class="attributes">
+              Food, Explore, Shop, Watch, Nature, Sport
+            </strong>
           </label>
-          <div className='searchBox'> 
+          <div className="searchBox">
             <input
               type="text"
               placeholder="Food, Explore, Shop, Watch, Nature, Sport"
               value={text}
               onChange={(e) => {
                 setText(e.target.value);
-              }}
-            />
+              }}/>
           </div>
         </div>
 
         <Button type="submit" className="btn btn-block btn-success">
-          <FaSearch/>&nbsp; <strong>Search</strong>
+          <FaSearch />
+          &nbsp; <strong>Search</strong>
         </Button>
       </Form>
     );

@@ -1,14 +1,14 @@
 .form-control {
-    background-color: #ef233c !important;
-    border: #ef233c !important;
+    background-color: #98c1d9 !important;
+    border: #98c1d9 !important;
     border-radius: 15px !important;
     padding: 20px !important;
 }
 
 input {
     border-radius: 30px !important;
-    background-color: #2b2d42;
-    color: #edf2f4;
+    background-color: #edf2f4;
+    color: #2b2d42;
     padding-left: 20px !important;
 }
 
