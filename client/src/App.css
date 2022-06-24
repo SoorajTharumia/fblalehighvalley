@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 
 .attractionBackground {
-  background: -webkit-linear-gradient(bottom left, #4ca1af, #c4e0e5);
+  background: #ced4da;
   position: relative;
   top: 70px;
   max-width: 90%;
@@ -12,9 +12,8 @@
 }
 
 body {
-  background: -webkit-linear-gradient(bottom right, #614380, #516395);
+  background-color: #2b2d42 !important;
 }
-
 
 * {
   box-sizing: border-box;
@@ -33,7 +32,7 @@ body {
 
 .container-fluid {
   text-align: center;
-  background-color: #E3F5A2;
+  background-color: #98c1d9;
   position: relative;
   top: 50px;
   max-width: 90%;
@@ -47,10 +46,10 @@ body {
   top: 100px;
   text-align: center;
   margin: auto;
-  color: black;
+  color: white;
   overflow: auto;
   padding: 20px;
-  background-color: #93F9C8;
+  background-color: #ef233c;
   height: 66px !important;
 }
 

@@ -3,7 +3,7 @@ import "./header.css"
 const Header = () => {
     return (
       <div>
-        <h1 className="header" style={{ color: "#24498a", fontSize: "30px" }}>
+        <h1 className="header" style={{ color: "#1d3557", fontSize: "30px" }}>
           <em>Explore the Lehigh Valley!</em>
         </h1>
 

@@ -9,10 +9,9 @@ export default function CardsList() {
   const [funs, setFuns] = useState([]);
 
   useEffect(() => {
-    fetch("https://fblaserver.herokuapp.com/")
-      .then(res => res.json())
-      .then((data) =>
-        setFuns(data));
+    fetch("https://fblalehighvalley-server.vercel.app/")
+      .then((res) => res.json())
+      .then((data) => setFuns(data));
   }, []);
 
   useEffect(() => {

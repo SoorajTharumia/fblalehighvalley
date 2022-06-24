@@ -8,10 +8,9 @@ export default function CardsList() {
   const [natures, setNatures] = useState([]);
 
   useEffect(() => {
-    fetch("https://fblaserver.herokuapp.com/")
-      .then(res => res.json())
-      .then((data) =>
-        setNatures(data));
+    fetch("https://fblalehighvalley-server.vercel.app/")
+      .then((res) => res.json())
+      .then((data) => setNatures(data));
   }, []);
 
   useEffect(() => {

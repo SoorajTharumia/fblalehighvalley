@@ -8,10 +8,9 @@ export default function CardsList() {
   const [shops, setShops] = useState([]);
 
   useEffect(() => {
-    fetch("https://fblaserver.herokuapp.com/")
-      .then(res => res.json())
-      .then((data) =>
-        setShops(data));
+    fetch("https://fblalehighvalley-server.vercel.app/")
+      .then((res) => res.json())
+      .then((data) => setShops(data));
   }, []);
 
   useEffect(() => {

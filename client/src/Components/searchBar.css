@@ -1,17 +1,27 @@
 .form-control {
-    background-color: #E3F5A2 !important;
-    border: #E3F5A2 !important;
+    background-color: #ef233c !important;
+    border: #ef233c !important;
+    border-radius: 15px !important;
+    padding: 20px !important;
 }
 
 input {
-    border-radius: 5px !important;
-    border: 0.5px solid !important;
+    border-radius: 30px !important;
+    background-color: #2b2d42;
+    color: #edf2f4;
+    padding-left: 20px !important;
+}
+
+input:focus {
+    outline: none !important;
 }
 
 .btn-success {
     margin-bottom: 25px;
+    background-color: #5a5cb6 !important;
+    filter: drop-shadow(0 0 0.75rem #edf2f4);
 }
 
-strong {
-    color:#24498a;
+.attributes {
+    color:#2b2d42;
 }

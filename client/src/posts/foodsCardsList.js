@@ -8,10 +8,9 @@ export default function CardsList() {
   const [foods, setFoods] = useState([]);
 
   useEffect(() => {
-    fetch("https://fblaserver.herokuapp.com/")
-      .then(res => res.json())
-      .then((data) =>
-        setFoods(data));
+    fetch("https://fblalehighvalley-server.vercel.app/")
+      .then((res) => res.json())
+      .then((data) => setFoods(data));
   }, []);
 
   useEffect(() => {
@@ -40,8 +39,7 @@ export default function CardsList() {
                   className="directionsBtn"
                   href={link}
                   target="_blank"
-                  rel="noreferrer"
-                >
+                  rel="noreferrer">
                   Get Directions
                 </a>
               </Button>

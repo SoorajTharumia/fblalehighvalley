@@ -9,11 +9,13 @@
 }
 
 .cardBorder {
-    border: 1px solid black !important;
     padding: 10px !important;
     border-width: 2px !important;
+    border-radius: 30px !important;
     margin: 0 2.5% 2.5% 2.5%;
     vertical-align: top;
+    background-color: #fffcf2 !important;
+    filter: drop-shadow(10px 10px 0.75rem #5a5cb694) !important;
 }
 
 .cardContent {
@@ -30,7 +32,7 @@
 
 a {
     text-decoration: underline;
-    color: black !important;
+    color: #3c91e6 !important;
 }
 
 a:hover {
@@ -40,6 +42,7 @@ a:hover {
 
 h2 {
     font-size: 25px !important;
+    color: #8b9db9;
 }
 
 .vertical {
@@ -47,4 +50,10 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.btn {
+    margin-bottom: 25px;
+    background-color: #5a5cb6 !important;
+    filter: drop-shadow(0 0 0.75rem #edf2f4) !important;
 }

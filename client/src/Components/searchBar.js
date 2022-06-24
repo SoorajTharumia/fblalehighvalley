@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Form, Button } from "react-bootstrap";
 import './searchBar.css'
+import {FaSearch} from 'react-icons/fa'
 
 const SearchBar = ({onSearch}) => {
     const [text, setText] = useState('')
@@ -20,22 +21,24 @@ const SearchBar = ({onSearch}) => {
     return (
       <Form className="add-form" onSubmit={onSubmit}>
         <div className="form-control">
-          <label>
+          <label style={{ color: '#edf2f4'}}>
             Search from one of the given attributes:{" "}
-            <strong>Food, Explore, Shop, Watch, Nature, Sport</strong>
+            <strong class='attributes'>Food, Explore, Shop, Watch, Nature, Sport</strong>
           </label>
-          <input
-            type="text"
-            placeholder="Food, Explore, Shop, Watch, Nature, Sport"
-            value={text}
-            onChange={(e) => {
-              setText(e.target.value);
-            }}
-          />
+          <div className='searchBox'> 
+            <input
+              type="text"
+              placeholder="Food, Explore, Shop, Watch, Nature, Sport"
+              value={text}
+              onChange={(e) => {
+                setText(e.target.value);
+              }}
+            />
+          </div>
         </div>
 
         <Button type="submit" className="btn btn-block btn-success">
-          Search
+          <FaSearch/>&nbsp; <strong>Search</strong>
         </Button>
       </Form>
     );

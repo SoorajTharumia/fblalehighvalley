@@ -1,5 +1,5 @@
 .navigation {
-    background-color: #93F9C8;
+    background-color: #ef233c;
 }
 
 .dropstart .dropdown-toggle::before{
@@ -10,3 +10,24 @@
     font-family: "Futura", sans-serif;
     font-weight: 200;
 }
+
+.weatherIcon {
+    color: white;
+}    
+
+.dropdown-menu {
+    background-color: #1d3557 !important;
+}
+
+.locationWeather {
+    color: #e63946
+}
+
+a.dropdown-item {
+    color: #fff !important;
+}
+
+span {
+    color: #8ecae6
+}
+
