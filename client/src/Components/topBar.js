@@ -28,14 +28,14 @@ export const TopBar = () => {
   return (
     <div>
       {typeof weather.main != "undefined" ? (
-        <Navbar className="navigation" expand="lg">
+        <Navbar className="navigation navbar-dark" expand="lg">
           <Container>
             <Navbar.Brand className="brand">
               <em style={{ color: "#edf2f4" }}>Lehigh Valley Tourism Bureau</em>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
-              <Nav className="ms-auto">
+              <Nav className="ms-auto navbar-dark">
                 <NavDropdown
                   title={
                     <div className="weatherIcon">
