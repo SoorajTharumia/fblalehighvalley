@@ -5,7 +5,6 @@ import {FaSearch} from 'react-icons/fa'
 
 const SearchBar = ({onSearch}) => {
     const [text, setText] = useState('')
-
     const onSubmit = (e) => {
         e.preventDefault()
 
@@ -13,19 +12,15 @@ const SearchBar = ({onSearch}) => {
             alert('Please add text to the search bar.')
             return
         }
-
         onSearch({text})
         setText('')
     }
-
     return (
       <Form className="add-form" onSubmit={onSubmit}>
         <div className="form-control">
           <label style={{ color: "#2b2d42" }}>
             Search from one of the given attributes:{" "}
-            <strong class="attributes">
-              Food, Explore, Shop, Watch, Nature, Sport
-            </strong>
+            <strong class="attributes">Food, Explore, Shop, Watch, Nature, Sport</strong>
           </label>
           <div className="searchBox">
             <input
@@ -33,11 +28,9 @@ const SearchBar = ({onSearch}) => {
               placeholder="Food, Explore, Shop, Watch, Nature, Sport"
               value={text}
               onChange={(e) => {
-                setText(e.target.value);
-              }}/>
+                setText(e.target.value);}}/>
           </div>
         </div>
-
         <Button type="submit" className="btn btn-block btn-success">
           <FaSearch />
           &nbsp; <strong>Search</strong>
