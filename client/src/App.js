@@ -93,7 +93,6 @@ const App = () => {
         FBLA Coding &#38; Programming 2021-2022, Sooraj Tharumia
       </div>
     </>
-  );
-  }
+  );}
 
 export default App;

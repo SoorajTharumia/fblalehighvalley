@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 
-mongoose.connect(process.env.MONGO_URI || 'https://fblaserver.herokuapp.com/', {
+mongoose.connect(process.env.MONGO_URI || 'https://fblalehighvalley-server.vercel.app/', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }, function (err) {
