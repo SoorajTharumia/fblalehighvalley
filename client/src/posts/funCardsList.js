@@ -3,7 +3,6 @@ import React, {useEffect, useState} from "react";
 import Button from "react-bootstrap/Button";
 import './posts.css';
 
-  
 export default function CardsList() {
 
   const [funs, setFuns] = useState([]);

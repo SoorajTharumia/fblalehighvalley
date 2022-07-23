@@ -4,7 +4,6 @@ import Button from "react-bootstrap/Button";
 import './posts.css';
   
 export default function CardsList() {
-
   const [sports, setSports] = useState([]);
 
   useEffect(() => {
