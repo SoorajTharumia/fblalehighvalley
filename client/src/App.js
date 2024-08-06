@@ -90,7 +90,7 @@ const App = () => {
         </div>
       </>
       <div className="container2">
-        FBLA Coding &#38; Programming 2021-2022, Sooraj Tharumia
+        Sooraj Tharumia
       </div>
     </>
   );}
